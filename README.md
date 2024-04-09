@@ -1,3 +1,5 @@
+### 2-es szint
+
 `python -m venv my_venv`
 
 `my_venv\Scripts\activate`
@@ -24,7 +26,7 @@ VSC-ben megnyitjuk
 
 config/settings.py -ba beírjuk az INSTALLED_APPS listába az 'autok' elemet
 
-### 2-es szint
+### 3-es szint
 
 templates mappa létrehozása és templates-ben index.html
 config/settings.py -ba a TEMPLATES-hez hozzáadjuk a
@@ -46,7 +48,7 @@ az urlpatterns-höz hozzáadni a következő sort
 
 `path('', indexPage, name="index"),`
 
-### 3-as szint
+### 4-as szint
 
 autok/models.py-ban létrehozunk egy modellt
 
@@ -90,7 +92,7 @@ admin.site.register(Auto)
 
 Hozzáadni pár teszt adatot az admin felületen.
 
-### 4-as szint
+### 5-as szint
 
 config/urls.py-ban beimportáljuk az Auto modellt, és kiegészítjük a korábbi indexPage view-t
 
@@ -121,4 +123,4 @@ az templates/index.html-be valahogy megjelenítjük, pl:
     </table>
 ```
 
-### 5-as szint
+### 😎🧠
