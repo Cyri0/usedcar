@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>Típus</th>
+            <th>Futott km</th>
+            <th>Üzemanyag</th>
+        </tr>
+    {% for car in cars %}
+        <tr>
+            <td>{{ car.brand }} - {{ car.car_type }} ({{ car.year }})</td>
+            <td>{{ car.mileage }} km</td>
+            <td>{{ car.fuel_type }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+</body>
+</html>
